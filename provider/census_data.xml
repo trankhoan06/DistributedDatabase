@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<global_census>
+    <census_data country="Vietnam">
+        <region id="VN01" name="Hanoi">
+            <citizen id="VN01-001">
+                <name>Nguyen Van A</name>
+                <age>28</age>
+                <gender>Male</gender>
+                <occupation>Engineer</occupation>
+            </citizen>
+            <citizen id="VN01-002">
+                <name>Tran Thi B</name>
+                <age>34</age>
+                <gender>Female</gender>
+                <occupation>Teacher</occupation>
+            </citizen>
+        </region>
+    </census_data>
+
+    <census_data country="Thailand">
+        <region id="TH01" name="Bangkok">
+            <citizen id="TH01-001">
+                <name>Somchai Somboon</name>
+                <age>25</age>
+                <gender>Male</gender>
+                <occupation>Developer</occupation>
+            </citizen>
+            <citizen id="TH01-002">
+                <name>Mali Saetang</name>
+                <age>29</age>
+                <gender>Female</gender>
+                <occupation>Marketing</occupation>
+            </citizen>
+        </region>
+    </census_data>
+
+    <census_data country="Cambodia">
+        <region id="KH01" name="Phnom Penh">
+            <citizen id="KH01-001">
+                <name>Sokha Raksmey</name>
+                <age>31</age>
+                <gender>Female</gender>
+                <occupation>Accountant</occupation>
+            </citizen>
+            <citizen id="KH01-002">
+                <name>Chann Sothy</name>
+                <age>27</age>
+                <gender>Male</gender>
+                <occupation>Tour Guide</occupation>
+            </citizen>
+        </region>
+    </census_data>
+</global_census>
