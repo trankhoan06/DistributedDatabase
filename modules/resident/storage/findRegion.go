@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func FindRegionByID(filePath string, regionID string) (*model.Region, error) {
+func (sql *ResidentFile) FindRegionByID(filePath string, regionID string) (*model.Region, error) {
 	// 1. Đọc file từ folder provider tương ứng
 	data, err := os.ReadFile(filePath)
 	if err != nil {

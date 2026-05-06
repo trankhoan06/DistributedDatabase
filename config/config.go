@@ -10,12 +10,9 @@ import (
 var config *Configuration
 
 type Configuration struct {
-	ThaiLanXml         string `env:"THAILANXML"`
-	ThaiLanReplicaXml  string `env:"THAILANREPLICAXML"`
-	VietNamXml         string `env:"VIETNAMXML"`
-	VietNamReplicaXml  string `env:"VIETNAMREPLICAXML"`
-	CambodiaXml        string `env:"CAMBODIAXML"`
-	CambodiaReplicaXml string `env:"CAMBODIAREPLICAXML"`
+	ThaiLanXml  string `env:"THAILANXML"`
+	VietNamXml  string `env:"VIETNAMXML"`
+	CambodiaXml string `env:"CAMBODIAXML"`
 }
 
 func GetConfig() *Configuration {

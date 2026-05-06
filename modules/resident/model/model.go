@@ -2,6 +2,11 @@ package model
 
 import "encoding/xml"
 
+type Result struct {
+	Total   int
+	Country string
+}
+
 // CensusData đại diện cho thẻ gốc <census_data>
 type CensusData struct {
 	XMLName xml.Name `xml:"census_data"`

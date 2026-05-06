@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func InsertOneResident(filePath string, newCitizen model.Citizen, regionID string) error {
+func (sql *ResidentFile) InsertOneResident(filePath string, newCitizen model.Citizen, regionID string) error {
 	// 1. Đọc dữ liệu hiện tại
 	data, _ := os.ReadFile(filePath)
 	var census model.CensusData

@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func InsertOneRegion(filePath string, newRegion model.Region) error {
+func (sql *ResidentFile) InsertOneRegion(filePath string, newRegion model.Region) error {
 	// 1. Đọc file hiện tại từ folder provider
 	data, err := os.ReadFile(filePath)
 	if err != nil {
