@@ -6,6 +6,10 @@ type Result struct {
 	Total   int
 	Country string
 }
+type NodeResult struct {
+	Count int
+	Err   error
+}
 
 // CensusData đại diện cho thẻ gốc <census_data>
 type CensusData struct {
