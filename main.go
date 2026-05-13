@@ -13,6 +13,7 @@ func main() {
 	resident := r.Group("/resident")
 	{
 		resident.GET("/total", ginResident.TotalResidents(cfg))
+		resident.GET("/total_sequential ", ginResident.TotalResidentsSequential(cfg))
 	}
 	//ctx, cancel := context.WithCancel(context.Background())
 	//worker.InitEmailWorker(ctx, sender, 100)
