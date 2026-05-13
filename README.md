@@ -19,20 +19,7 @@ Hệ thống mô phỏng một cơ sở dữ liệu dân cư phân tán được
 
 ## 📂 Project Structure
 
-.
-├── common/             # Tiện ích cấu hình và xử lý đường dẫn file
-├── modules/
-│   └── resident/
-│       ├── biz/        # Tầng nghiệp vụ: Điều phối, Parallel & Failover logic
-│       ├── model/      # Định nghĩa cấu trúc dữ liệu (structs)
-│       └── storage/    # Tầng dữ liệu: Thực thi XQuery trên file XML
-├── provider/           # Giả lập các Nodes lưu trữ dữ liệu
-│   ├── vietnam/        # resident.xml & resident_replica.xml
-│   ├── thailan/        # resident.xml & resident_replica.xml
-│   └── cambodia/       # resident.xml & resident_replica.xml
-├── config.json         # Cấu hình hệ thống và đường dẫn trạm
-└── main.go             # Điểm khởi chạy ứng dụng
-
+![img.png](img.png)
 
 ⚙️ Installation & Setup
 1. Yêu cầu hệ thống
