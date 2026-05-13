@@ -7,7 +7,6 @@ import (
 )
 
 func (sql *ResidentFile) QueryCountry(countryPath string) (int, error) {
-	//path := common.PathFile(countryPath)
 	//if strings.Contains(countryPath, "provider/vietnam/resident.xml") {
 	//	fmt.Println("[DEBUG] Giả lập trạm Vietnam bị treo cứng...")
 	//	time.Sleep(10 * time.Second)
