@@ -16,6 +16,7 @@ func TotalResidentsSequential(cfg *config.Configuration) func(*gin.Context) {
 		res, err := business.NewTotalResidentSequential()
 		if err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.(*common.AppError)})
+			return
 		}
 		c.JSON(http.StatusOK, gin.H{"data": res})
 

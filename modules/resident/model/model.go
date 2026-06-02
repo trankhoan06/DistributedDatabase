@@ -33,3 +33,23 @@ type Citizen struct {
 	Gender     string `xml:"gender"`     // Thẻ <gender>
 	Occupation string `xml:"occupation"` // Thẻ <occupation>
 }
+
+// FragmentAnalysis lưu trữ thông tin phân tích tại mỗi trạm
+type FragmentAnalysis struct {
+	Country      string `json:"country"`
+	SubQuery     string `json:"sub_query"`
+	Result       int    `json:"result"`
+	Overhead     int    `json:"overhead_bytes"`      // Kích thước của kết quả gửi về
+	OriginalSize int64  `json:"original_size_bytes"` // Kích thước của toàn bộ file XML
+}
+
+// AnalysisResult lưu trữ kết quả phân tích toàn cục
+type AnalysisResult struct {
+	GlobalQuery      string             `json:"global_query"`
+	GlobalResult     int                `json:"global_result"`
+	Decomposition    []FragmentAnalysis `json:"decomposition"`
+	TotalOverhead    int                `json:"total_communication_overhead_bytes"`
+	TotalOriginal    int64              `json:"total_overhead_without_decomposition_bytes"`
+	SavedBandwidth   int64              `json:"saved_bandwidth_bytes"`
+	XQueryComplexity string             `json:"xquery_complexity"`
+}
